@@ -402,7 +402,7 @@ body{
         width: 134px;
         height: 134px;
         border: 15px solid hsl(230, 89%, 65%);
-        top: 27%;
+        top: 32%;
         left: 8%;
     }
 
@@ -410,7 +410,7 @@ body{
         width: 134px;
         height: 134px;
         border: 15px solid hsl(39, 89%, 49%);
-        top: 27%;
+        top: 32%;
         left: 60%;
     }
 
@@ -418,7 +418,9 @@ body{
         width: 134px;
         height: 134px;
         border: 15px solid hsl(349, 71%, 52%);
-        top: 46%;
+        top: 56%;
         left: 32%;
     }
+
+
 }
