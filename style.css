@@ -83,7 +83,7 @@ body{
     background-color: white;
     padding: 15px;
     border-radius: 8px;
-    z-index: 3;
+    z-index: 11;
 }
 
 #div_rules_title{
@@ -115,7 +115,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 6;
+    z-index: 10;
 }
 
 #div_2{
@@ -139,6 +139,7 @@ body{
     border: 1.5vw solid hsl(230, 89%, 65%);
     box-shadow: 0px 2px 1px 2px rgb(183, 188, 210) inset, 0px 5px 1px hsl(230, 29%, 41%);
     transition: all 0.7s 0s;
+    z-index: 3;
 }
 
 #btn_feuille:hover{
@@ -155,6 +156,7 @@ body{
     border: 1.5vw solid hsl(39, 89%, 49%);
     box-shadow: 0px 2px 1px 2px rgb(183, 188, 210) inset, 0px 5px 1px hsl(40, 41%, 35%);
     transition: all 0.7s 0s;
+    z-index: 3;
 }
 
 #btn_ciseaux:hover{
@@ -171,7 +173,7 @@ body{
     border: 1.5vw solid hsl(349, 71%, 52%);
     box-shadow: 0px 2px 1px 2px rgb(183, 188, 210) inset, 0px 5px 1px hsl(349, 39%, 33%);
     transition: all 0.7s 0s;
-
+    z-index: 3;
 }
 
 #btn_pierre:hover{
@@ -322,25 +324,34 @@ body{
 
 
 #shadow_3{
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 18vw;
-    height: 18vw;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 20vw;
+    height: 20vw;
     border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.1);
+    transition: all 2s 0s;
 }
 
 #shadow_2{
-    background-color: rgba(255, 255, 255, 0.3);
-    width: 23vw;
-    height: 23vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 25vw;
+    height: 25vw;
     border-radius: 100%;
+    transform: scale(0.1);
+    transition: all 2s 0s;
 }
 
 #shadow_1{
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 28vw;
-    height: 28vw;
+    background-color: rgba(255, 255, 255, 0.01);
+    width: 30vw;
+    height: 30vw;
     border-radius: 100%;
     position: absolute;
     top: 20%;
     left: 30%;
+    transform: scale(0.1);
+    transition: all 2s 0s;
 }

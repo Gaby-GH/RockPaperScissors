@@ -197,23 +197,9 @@ let div_win = document.querySelector("#div_win")
 let p_win = document.querySelector("#p_win")
 let btn_win = document.querySelector("#btn_win")
 
-let shadow_1 = document.querySelector("#shadow_1")
-let shadow_2 = document.querySelector("#shadow_2")
-let shadow_3 = document.querySelector("#shadow_3")
-
 function Win(element){
     score += 1
     aff_score.textContent = score
-
-    shadow_3.style.display = "flex"
-    shadow_3.style.alignItems = "center"
-    shadow_3.style.justifyContent = "center"
-    shadow_2.style.display = "flex"
-    shadow_2.style.alignItems = "center"
-    shadow_2.style.justifyContent = "center"
-    shadow_1.removeAttribute("hidden")
-    shadow_2.removeAttribute("hidden")
-    shadow_3.removeAttribute("hidden")
 
     element.style.left = "24%"
     p1.style.left = "27%"
