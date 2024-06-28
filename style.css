@@ -115,79 +115,87 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 2;
+    z-index: 6;
 }
 
-
 #div_2{
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 25vw;
     margin-right: 25vw;
     background-image: url("images/bg-triangle.svg");
     background-position: center;
-    background-size: 230px;
+    background-size: 20vw;
     background-repeat: no-repeat;
     height: 400px;
 }
 
 #btn_feuille{
-    position: relative;
-    top: 6%;
-    left: 18%;
+    position: sticky;
+    top: 20%;
+    left: 34%;
     width: 13vw;
     height: 13vw;
     border-radius: 100%;
-    border: 14px solid hsl(230, 89%, 65%);
-    box-shadow: -1px 2px 1px 2px rgba(0, 0, 0, 0.3) inset, 0px 5px 1px hsl(230, 29%, 41%);
+    border: 1.5vw solid hsl(230, 89%, 65%);
+    box-shadow: 0px 2px 1px 2px rgb(183, 188, 210) inset, 0px 5px 1px hsl(230, 29%, 41%);
     transition: all 0.7s 0s;
+}
+
+#btn_feuille:hover{
+    transform: scale(1.05);
 }
 
 #btn_ciseaux{
-    position: relative;
-    top: 6%;
-    left: 30%;
+    position: sticky;
+    top: 20%;
+    left: 54%;
     width: 13vw;
     height: 13vw;
     border-radius: 100%;
-    border: 14px solid hsl(39, 89%, 49%);
-    box-shadow: -1px 2px 1px 2px rgba(0, 0, 0, 0.3) inset, 0px 5px 1px hsl(40, 41%, 35%);
+    border: 1.5vw solid hsl(39, 89%, 49%);
+    box-shadow: 0px 2px 1px 2px rgb(183, 188, 210) inset, 0px 5px 1px hsl(40, 41%, 35%);
     transition: all 0.7s 0s;
+}
+
+#btn_ciseaux:hover{
+    transform: scale(1.05);
 }
 
 #btn_pierre{
-    position: relative;
-    top: 50%;
-    left: -20%;
+    position: sticky;
+    top: 90%;
+    right: 43%;
     width: 13vw;
     height: 13vw;
     border-radius: 100%;
-    border: 14px solid hsl(349, 71%, 52%);
-    box-shadow: -1px 2px 1px 2px rgba(0, 0, 0, 0.3) inset, 0px 5px 1px hsl(349, 39%, 33%);
+    border: 1.5vw solid hsl(349, 71%, 52%);
+    box-shadow: 0px 2px 1px 2px rgb(183, 188, 210) inset, 0px 5px 1px hsl(349, 39%, 33%);
     transition: all 0.7s 0s;
 
 }
 
-.enlever{
-    transform: scale(0);
+#btn_pierre:hover{
+    transform: scale(1.05);
 }
-
 
 #p_you_picked{
     color: white;
     position: fixed;
     top: 35%;
-    left: 30%;
+    left: 37%;
     font-weight: bold;
     letter-spacing: 1px;
+    transition: all 1s 0s;
 }
 
 #p_the_house_picked{
     color: white;
     position: fixed;
     top: 35%;
-    left: 60%;
+    left: 54%;
     font-weight: bold;
     letter-spacing: 1px;
+    transition: all 1s 0s;
 }
 
 #dark_rond{
@@ -196,6 +204,143 @@ body{
     background-color: hsl(229, 25%, 31%);
     position: fixed;
     top: 50%;
-    left: 59%;
+    left: 53%;
     border-radius: 100%;
+    transition: all 0.7s 0s;
+}
+
+#div_draw{
+    position: fixed;
+    top: 50%;
+    left: 44%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s 0s;
+    transform: scale(0.1);
+    z-index: 3;
+}
+
+#p_draw{
+    color: white;
+    font-size: 36px;
+    margin: 0px;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+#btn_draw{
+    color: hsl(229, 25%, 31%);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    height: 3vw;
+    width: 12vw;
+    border-radius: 4px;
+    background-color: white;
+    border: 0px solid black;
+}
+
+#btn_draw:hover{
+    color: hsl(230, 89%, 62%);
+}
+
+#div_win{
+    position: fixed;
+    top: 50%;
+    left: 44%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s 0s;
+    transform: scale(0.1);
+    z-index: 3;
+}
+
+#p_win{
+    color: white;
+    font-size: 36px;
+    margin: 0px;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+#btn_win{
+    color: hsl(229, 25%, 31%);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    height: 3vw;
+    width: 12vw;
+    border-radius: 4px;
+    background-color: white;
+    border: 0px solid black;
+}
+
+#btn_win:hover{
+    color: hsl(39, 89%, 49%);
+}
+
+#div_lose{
+    position: fixed;
+    top: 50%;
+    left: 44%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s 0s;
+    transform: scale(0.1);
+    z-index: 3;
+}
+
+#p_lose{
+    color: white;
+    font-size: 36px;
+    margin: 0px;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+#btn_lose{
+    color: hsl(229, 25%, 31%);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    height: 3vw;
+    width: 12vw;
+    border-radius: 4px;
+    background-color: white;
+    border: 0px solid black;
+}
+
+#btn_lose:hover{
+    color: hsl(349, 71%, 52%);
+}
+
+
+#shadow_3{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 18vw;
+    height: 18vw;
+    border-radius: 100%;
+}
+
+#shadow_2{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 23vw;
+    height: 23vw;
+    border-radius: 100%;
+}
+
+#shadow_1{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 28vw;
+    height: 28vw;
+    border-radius: 100%;
+    position: absolute;
+    top: 20%;
+    left: 30%;
 }
