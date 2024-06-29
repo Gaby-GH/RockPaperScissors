@@ -1,3 +1,11 @@
+/*function noScroll(evt) {   
+    var x = document.documentElement.scrollLeft;
+    var y = document.documentElement.scrollTop;
+    window.scrollTo(x, y);
+}
+window.addEventListener('scroll', noScroll);*/
+document.documentElement.style.overflow = 'hidden';
+
 // SET
 
 let score = 0
