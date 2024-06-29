@@ -342,9 +342,9 @@ if (window.innerWidth > 375){
         p2.removeAttribute("hidden")
         dark_rond.removeAttribute("hidden")
         div_2.style.backgroundImage = "url()"
-        feuille.removeEventListener()
         setTimeout(() => {
             RandomPicked()
+            feuille.removeEventListener()
         }, "1000")
     })
 
@@ -359,9 +359,9 @@ if (window.innerWidth > 375){
         p2.removeAttribute("hidden")
         dark_rond.removeAttribute("hidden")
         div_2.style.backgroundImage = "url()"
-        feuille.removeEventListener()
         setTimeout(() => {
             RandomPicked()
+            ciseaux.removeEventListener()
         }, "1000")
     })
 
@@ -376,9 +376,9 @@ if (window.innerWidth > 375){
         p2.removeAttribute("hidden")
         dark_rond.removeAttribute("hidden")
         div_2.style.backgroundImage = "url()"
-        pierre.removeEventListener()
         setTimeout(() => {
             RandomPicked()
+            pierre.removeEventListener()
         }, "1000")
     })
 
@@ -610,9 +610,9 @@ if (window.innerWidth > 375){
             p2.removeAttribute("hidden")
             dark_rond.removeAttribute("hidden")
             div_2.style.backgroundImage = "url()"
-            feuille.removeEventListener()
             setTimeout(() => {
                 RandomPicked()
+                feuille.removeEventListener()
             }, "1000")
         })
     
@@ -627,9 +627,9 @@ if (window.innerWidth > 375){
             p2.removeAttribute("hidden")
             dark_rond.removeAttribute("hidden")
             div_2.style.backgroundImage = "url()"
-            feuille.removeEventListener()
             setTimeout(() => {
                 RandomPicked()
+                ciseaux.removeEventListener()
             }, "1000")
         })
 
@@ -644,9 +644,9 @@ if (window.innerWidth > 375){
             p2.removeAttribute("hidden")
             dark_rond.removeAttribute("hidden")
             div_2.style.backgroundImage = "url()"
-            pierre.removeEventListener()
             setTimeout(() => {
                 RandomPicked()
+                pierre.removeEventListener()
             }, "1000")
         })
     }
