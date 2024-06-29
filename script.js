@@ -344,7 +344,6 @@ if (window.innerWidth > 375){
         div_2.style.backgroundImage = "url()"
         setTimeout(() => {
             RandomPicked()
-            feuille.removeEventListener()
         }, "1000")
     })
 
@@ -361,7 +360,6 @@ if (window.innerWidth > 375){
         div_2.style.backgroundImage = "url()"
         setTimeout(() => {
             RandomPicked()
-            ciseaux.removeEventListener()
         }, "1000")
     })
 
@@ -378,7 +376,6 @@ if (window.innerWidth > 375){
         div_2.style.backgroundImage = "url()"
         setTimeout(() => {
             RandomPicked()
-            pierre.removeEventListener()
         }, "1000")
     })
 
@@ -598,57 +595,6 @@ if (window.innerWidth > 375){
         dark_rond.style.left = "53%"
         let supp = document.querySelector("#aff_House_picked")
         supp.remove()
-
-        feuille.addEventListener("click", () => {
-            choice = "f"
-            feuille.style.position = "fixed"
-            feuille.style.top = "32%"
-            feuille.style.left = "12%"
-            ciseaux.setAttribute("hidden", true)
-            pierre.setAttribute("hidden", true)
-            p1.removeAttribute("hidden")
-            p2.removeAttribute("hidden")
-            dark_rond.removeAttribute("hidden")
-            div_2.style.backgroundImage = "url()"
-            setTimeout(() => {
-                RandomPicked()
-                feuille.removeEventListener()
-            }, "1000")
-        })
-    
-        ciseaux.addEventListener("click", () => {
-            choice = "c"
-            ciseaux.style.position = "fixed"
-            ciseaux.style.top = "32%"
-            ciseaux.style.left = "12%"
-            feuille.setAttribute("hidden", true)
-            pierre.setAttribute("hidden", true)
-            p1.removeAttribute("hidden")
-            p2.removeAttribute("hidden")
-            dark_rond.removeAttribute("hidden")
-            div_2.style.backgroundImage = "url()"
-            setTimeout(() => {
-                RandomPicked()
-                ciseaux.removeEventListener()
-            }, "1000")
-        })
-
-        pierre.addEventListener("click", () => {
-            choice = "p"
-            pierre.style.position = "fixed"
-            pierre.style.top = "32%"
-            pierre.style.left = "12%"
-            ciseaux.setAttribute("hidden", true)
-            feuille.setAttribute("hidden", true)
-            p1.removeAttribute("hidden")
-            p2.removeAttribute("hidden")
-            dark_rond.removeAttribute("hidden")
-            div_2.style.backgroundImage = "url()"
-            setTimeout(() => {
-                RandomPicked()
-                pierre.removeEventListener()
-            }, "1000")
-        })
     }
 
     // RULES
